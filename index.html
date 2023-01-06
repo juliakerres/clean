@@ -103,15 +103,30 @@ img{
 .hidden {
         opacity: 0;
       }
-  .description{
-  position: fixed;
-    
-  }
+  
+/* footer */
+        footer {
+            position: fixed;
+            text-align: center;
+            bottom: 6px;
+            right: 6px;
+            width: 100%;
+        }
+
+
+        .description {
+            position: sticky;
+            text-align: right;
+            margin-right: 6px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            text-shadow: 0 0 8px #000;
+            color: hotpink;
+        }
 
   </style>
 
   <body>
-    <div class="description">this is a keypress event, press letters on your keyboard to clean up the page</div>
 
       <img id="yellowVacuum" class="hidden" src="yellow_long.png"/>
       <img id="hellgruen" class="hidden" src="hellgruen.png"/>
@@ -158,7 +173,11 @@ img{
 
     <audio id="beigeaudio" src="beige.mp3" loop>
     </audio>
-
+    
+<footer>
+        <p class=" description"><em>this is a keypress event, press letters on your keyboard to clean up the page</em></p>
+    </footer>
+    
       </body>
 
 <script>
